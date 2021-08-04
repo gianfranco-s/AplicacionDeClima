@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-=db_-of%wdkact)suvgdn!r!epg(3z80#!7mt+4b9dp_9&25wu
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['damp-escarpment-77409.herokuapp.com/']
+ALLOWED_HOSTS = ['damp-escarpment-77409.herokuapp.com/','0.0.0.0']
 
 
 # Application definition
@@ -77,11 +77,15 @@ WSGI_APPLICATION = 'the_weather.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd68fpth5ft6srp',
+        'HOST': 'ec2-54-236-137-173.compute-1.amazonaws.com',
+        'PORT': 5432,
+        'USER': 'esylsbckefnmid',
+        'PASSWORD': '8316aa62ff2066b64938c42ee716db522efff290fdc01f83cbf65038ca3c9ba9'
+
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
